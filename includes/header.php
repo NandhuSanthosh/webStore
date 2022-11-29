@@ -128,7 +128,7 @@ else
                      if(isset($_SESSION['User']))
                         {
                                   ?>
-                           <li>
+                           <li >
                                <a href="logout.php" class="nav-link"> Logout</a>
                            </li>
                            <?php 
@@ -137,7 +137,7 @@ else
                         {
                             ?>
                            <li class="nav-item">
-                         <button type="button" data-toggle="modal"  data-target="#exampleModal"> Login</button>
+                         <a type="button" data-toggle="modal"  data-target="#exampleModal"  class="nav-link"> Login</a>
                      </li> 
                            <?php 
                         }
