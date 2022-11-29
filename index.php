@@ -20,6 +20,7 @@ include './db.php';
          	window.scrollTo(0, 1);
          }
       </script>
+      <script defer src="js/activePage.js"></script>
       <!--//meta tags ends here-->
       <!--booststrap-->
       <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
@@ -118,9 +119,10 @@ discontinued and obsolete stock at reduced prices</p>
                   <div class="carousel-item active">
                      <div class="row">
                          <?php 
-                         $qb=  mysqli_query($con,"select *from testimony where Status='Active' order by Id desc limit 2");
+                         $qb=  mysqli_query($con,"select *from testimony order by Id desc limit 2");
                          while ($r3=  mysqli_fetch_array($qb))
                          {
+
                          ?>
                         <div class="col-lg-6 clients-w3layouts-row">
                            <div class="least-w3layouts-text-gap">

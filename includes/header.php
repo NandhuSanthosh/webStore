@@ -89,12 +89,12 @@ if(isset($_SESSION['User']))
                <span class="navbar-toggler-icon"></span>
                </button>
                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                  <ul class="navbar-nav ">
-                     <li class="nav-item active">
-                        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                  <ul class="navbar-nav navigationButtons ">
+                     <li class="nav-item ">
+                        <a class="nav-link" href="index.php">Home </a>
                      </li>
                      <li class="nav-item">
-                        <a href="about.php" class="nav-link">About</a>
+                        <a href="about.php" class="nav-link">About </a>
                      </li>
                      <li class="nav-item">
                         <a href="service.php" class="nav-link">Service</a>

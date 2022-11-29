@@ -111,6 +111,8 @@ include './includes/header.php';
       <!--//js working-->
       <!-- cart-js -->
       <script src="js/minicart.js"></script>
+      <script defer src="js/activePage.js"></script>
+
       <script>
          toys.render();
          

@@ -20,6 +20,8 @@ include './db.php';
          	window.scrollTo(0, 1);
          }
       </script>
+      <script defer src="js/activePage.js"></script>
+
       <!--//meta tags ends here-->
       <!--booststrap-->
       <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
