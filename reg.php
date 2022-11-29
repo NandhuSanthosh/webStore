@@ -113,8 +113,8 @@ include './includes/header.php';
   
           $pswd=$_POST['pswd'];
      $dist=$_POST['dist'];
-        $q=  mysqli_query($con,"insert into registration(Name,Address,Pin,Email,Mobile,Password,District,Status) values('$name','$addr','$pin','$ema','$mob','$pswd','$dist','Inactive')");
-  $qz=  mysqli_query($con,"insert into login(Username,Password,Usertype,Status) values('$ema','$pswd','User','Inactive')");
+        $q=  mysqli_query($con,"insert into registration(Name,Address,Pin,Email,Mobile,Password,District) values('$name','$addr','$pin','$ema','$mob','$pswd','$dist')");
+       $qz=  mysqli_query($con,"insert into login(Username,Password,Usertype) values('$ema','$pswd','User')");
   
         echo "<script>alert('Successfully saved your details...');</script>";  
                 }

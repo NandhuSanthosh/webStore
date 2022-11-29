@@ -88,16 +88,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  <tr>
 							<th>Id</th>
 							<th>Name</th>
-                                                        <th>Address</th>
-                                                        <th>Email</th>
-
+              <th>Address</th>
+               <th>Email</th>
 							<th>Phone</th>
-                                                        
-                                                        <th>District</th>
-                                                        <th>Status</th>
-                                                        <th></th>
-                                                     
-                                                        <th>Actions</th>
+              <th>District</th>
+              <th>Actions</th>
                                                        
                                                         
 						  </tr>
@@ -119,22 +114,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                     <td><?php echo $r['Mobile'];?></td>
                                                       
                                                          <td><?php echo $r['District'];?></td>  
-                                                           <td><?php echo $r['Status'];?></td>     
-                                                         <?php
 
-                                                         if($r['Status']=='Inactive')
-                                                         {
-                                                         ?>
-                                                         <td><a href="useractive.php?id=<?php echo $r['Id'];?>&s=<?php echo $r['Status'];?>">Active</a></td>
-                                                         <?php
-                                                         }
-                                                         elseif ($r['Status']=='Active') {
-                                                         ?>
-                                                     <td><a href="useractive.php?id=<?php echo $r['Id'];?>&&s=<?php echo $r['Status'];?>">Inactive</a></td>
-                                                       
-                                                         <?php
-                                                         }
-                                                         ?>                                        
+                                                         
+                                                           
                                                         <td><a href="deluser.php?id=<?php echo $r['Id'];?>"><input type="button" name="btn" value="delete" onclick="alert('are you sure want to delete??')"> </a></td>
                              
                             </td>
