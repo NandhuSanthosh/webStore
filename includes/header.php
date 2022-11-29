@@ -101,7 +101,7 @@ if(isset($_SESSION['User']))
                      </li>
                     
                         <?php  
-                               if(isset($_SESSION['User']))
+                               if(TRUE)
 {
                                ?>  
                        <li class="nav-item">
