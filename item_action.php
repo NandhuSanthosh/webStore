@@ -133,9 +133,16 @@ include './includes/header.php';
                                              <div class="grid-price mt-2">
                                            <span class="money "><?php echo $rt1['Email'];?></span>
                                           </div>
+                                          <?php  
+                               if(isset($_SESSION['User']))
+{
+                               ?>  
                                               <div class="grid-price mt-2">
                                                   <a href="product_view.php?shopid=<?php echo $shopid;?>&oid=<?php echo $oid;?>" class="btn btn-info" >GO TO CART</a>
-                                          </div>
+                                             </div>
+                                             <?php 
+}
+                              ?>
                                        </div>
                                       
                                     </div>

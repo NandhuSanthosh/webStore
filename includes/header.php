@@ -99,17 +99,14 @@ if(isset($_SESSION['User']))
                      <li class="nav-item">
                         <a href="service.php" class="nav-link">Service</a>
                      </li>
-                    
-                        <?php  
-                               if(TRUE)
-{
-                               ?>  
-                       <li class="nav-item">
+                     <li class="nav-item">
                           <a href="items.php" class="nav-link">Items</a>
                      </li>
-                      <li class="nav-item">
-                          <a target="_blank" href="aaa.php" class="nav-link">My Cart</a>
-                     </li>
+                        <?php  
+                               if(isset($_SESSION['User']))
+                               {
+                                                              ?>  
+
                        <li class="nav-item">
                            <a href="complaint.php" class="nav-link">Complaint</a>
                      </li>
