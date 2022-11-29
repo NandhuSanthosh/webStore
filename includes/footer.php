@@ -41,7 +41,7 @@
                            $Email=$_POST['Email'];
                             $password=$_POST['password'];
                             //echo "select *from login where Username='$Email' and Password='$password' and Usertype='User'";
-                            $qc=  mysqli_query($con,"select *from login where Username='$Email' and Password='$password' and Usertype='User' and Status='Active'");
+                            $qc=  mysqli_query($con,"select *from login where Username='$Email' and Password='$password' and Usertype='User' ");
                            
                             $r1=  mysqli_fetch_array($qc);
                          $n= mysqli_num_rows($qc);
